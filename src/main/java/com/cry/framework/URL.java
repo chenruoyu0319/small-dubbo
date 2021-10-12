@@ -1,0 +1,40 @@
+package com.cry.framework;
+
+import java.io.Serializable;
+
+/**
+ * URL封装
+ */
+public class URL implements Serializable {
+
+    /**
+     * 域名
+     */
+    private String hostname;
+
+    /**
+     * 端口号
+     */
+    private Integer port;
+
+    public URL(String hostname, Integer port) {
+        this.hostname = hostname;
+        this.port = port;
+    }
+
+    public String getHostname() {
+        return hostname;
+    }
+
+    public void setHostname(String hostname) {
+        this.hostname = hostname;
+    }
+
+    public Integer getPort() {
+        return port;
+    }
+
+    public void setPort(Integer port) {
+        this.port = port;
+    }
+}
